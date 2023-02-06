@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
 h1{
     font-size: 50px;
     line-height: 64px;
@@ -36,6 +39,9 @@ body{
     width: 100%;
 }
 
+.p1{
+    padding: 1rem 2rem;
+}
 
 /* NavBar */
 
@@ -46,7 +52,7 @@ body{
     background-color: #e3e6f3;
     box-shadow: 0px 5px 5px rgba(0, 0, 0,0.1);
     padding: 20px 80px;
-    width: 100vw;
+    width: 100%;
     position: sticky;
     top:0;
     left: 0;
@@ -141,3 +147,135 @@ body{
 #hero h4{
     padding-bottom: 15px;
 }
+
+
+
+/* Feature Section */
+
+#feature{
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+    background-color: white;
+    
+   
+}
+
+.fe-box{
+    width: 15%;
+    text-align: center;
+    border: 2px solid #cce7d0;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.03);
+}
+
+.fe-box img{
+    width: 100%;
+    height: 8rem;
+    
+}
+
+.fe-box:hover{
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+    border: 2px solid lightblue;
+    transform: scale(1.1,1.1);
+}
+
+.fe-box h6{
+    display: inline-block;
+    margin: 0.5em 0.5em;
+    padding: 0.5em 0.5em;
+}
+
+.fe-box:nth-child(2n+1) h6{
+    background-color: #fddde4;
+}
+
+.fe-box:nth-child(2n) h6{
+    background-color: #cdebbc;
+}
+
+
+
+/* Product 1  Section */
+
+#product1 h2,p {
+    text-align: center;
+}
+
+.pro-container{
+    display: flex;
+    gap:1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.pro {
+    width: 20%;
+    min-width: 250px;
+    border: 2px solid #cce7d0;
+    cursor: pointer;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.03);
+    transition: 0.4s ease;
+    border-radius: 5px;
+    padding: 1em 
+
+}
+
+
+.pro:hover{
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+   
+}
+
+.pro img{
+    width: 100%;
+}
+
+.pro .description{
+    text-align: start;
+    position: relative;
+    
+}
+
+.pro .description h4:nth-child(2){
+    color: #1a1a1a;
+    padding-top: 0.3em;
+}
+
+
+.pro .description span{
+    color: #606063;
+}
+
+.pro .description .star i{
+    color: rgb(243,181,25);
+    
+}
+
+.pro .description h4:nth-child(4){
+    color: #088178;
+
+}
+
+.pro .description .cart-icon {
+    position: absolute;
+    top:55%;
+    left: 85%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e8f6ea;
+    color:#088178;
+   
+
+}
+
+.fa-solid.fa-cart-plus::before{
+    position: absolute;
+    color:#088178;
+    left: 50%;
+    transform:translateX(-50%);
+
+}
+
